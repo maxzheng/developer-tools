@@ -23,11 +23,14 @@ setuptools.setup(
     python_requires='>=3.6',
     setup_requires=['setuptools-git'],
 
-    # entry_points={
-    #    'console_scripts': [
-    #        'script_name = package.module:entry_callable',
-    #    ],
-    # },
+    entry_points={
+       'autopip': [
+            'ansible = 2',
+            'ansible-hostmanager = latest',
+            'twine = 1',
+            'workspace-tools = latest',
+        ],
+    },
 
     # Standard classifiers at https://pypi.org/classifiers/
     classifiers=[
