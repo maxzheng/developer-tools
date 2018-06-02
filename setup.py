@@ -27,6 +27,7 @@ setuptools.setup(
        'autopip': [
             'ansible = 2.5.4',
             'ansible-hostmanager = latest',
+            'flake8 = 3',
             'twine = 1',
             'workspace-tools = latest',
         ],
