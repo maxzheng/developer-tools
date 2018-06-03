@@ -1,5 +1,10 @@
-Version 0.0.5
+Version 0.0.6
 ================================================================================
+
+* Fix link take 2 and pin twine to major as an example
+
+Version 0.0.5
+--------------------------------------------------------------------------------
 
 * Fix link
 * Add comment about version pinning
