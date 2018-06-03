@@ -16,7 +16,6 @@ in `developer-tools' setup.py <https://github.com/maxzheng/developer-tools/blob/
         'autopip': [
             'ansible = 2.5.4',                 # Pin to specific version without auto-update (recommended for 3rd party)
             'ansible-hostmanager = latest',    # Install latest and update hourly (for apps that you own)
-            'autopip = latest',                # So autopip updates itself
             'awscli = 1.15 [monthly]',         # Pin to minor and update monthly
             'flake8 = 3 [weekly]',             # Pin to major and update weekly
             'twine = 1 [weekly]',
@@ -55,7 +54,6 @@ And everything is installed as expected:
     $ autopip list
     ansible              2.5.4    /home/mzheng/.apps/ansible/2.5.4
     ansible-hostmanager  0.2.3    /home/mzheng/.apps/ansible-hostmanager/0.2.3  [updates hourly]
-    autopip              1.0.2    /home/mzheng/.apps/autopip/1.0.2              [updates hourly]
     awscli               1.15.31  /home/mzheng/.apps/awscli/1.15.31             [updates monthly]
     developer-tools      1.0.1    /home/mzheng/.apps/developer-tools/1.0.1      [updates hourly]
     flake8               3.5.0    /home/mzheng/.apps/flake8/3.5.0               [updates weekly]
@@ -77,7 +75,6 @@ Finally, uninstall will remove them all as well -- though I do recommend keeping
     Uninstalling rstcheck
     Uninstalling twine
     Uninstalling workspace-tools
-    Uninstalling autopip
 
 Pretty cool, huh? :)
 
