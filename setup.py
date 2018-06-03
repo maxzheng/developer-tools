@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name='developer-tools',
-    version='1.0.2',
+    version='1.0.3',
 
     author='Max Zheng',
     author_email='maxzheng.os@gmail.com',
