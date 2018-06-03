@@ -24,11 +24,12 @@ setuptools.setup(
     setup_requires=['setuptools-git'],
 
     entry_points={
-       'autopip': [
+        'autopip': [
+            'awscli = 1.15',                    # Pin to minor
             'ansible = 2.5.4',                  # Pin to specific version (recommended for 3rd party)
             'ansible-hostmanager = latest',     # Install latest (for apps that you own)
             'flake8 = 3',                       # Pin to major
-            'twine = 1.11',                     # Pin to minor
+            'twine = 1',
             'workspace-tools = latest',
         ],
     },
