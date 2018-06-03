@@ -1,5 +1,11 @@
-Version 0.0.4
+Version 0.0.5
 ================================================================================
+
+* Fix link
+* Add comment about version pinning
+
+Version 0.0.4
+--------------------------------------------------------------------------------
 
 * Provide example and details
 * Add flake8
