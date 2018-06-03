@@ -25,10 +25,10 @@ setuptools.setup(
 
     entry_points={
        'autopip': [
-            'ansible = 2.5.4',                  # Pin to specific version
-            'ansible-hostmanager = latest',     # Install latest
+            'ansible = 2.5.4',                  # Pin to specific version (recommended for 3rd party)
+            'ansible-hostmanager = latest',     # Install latest (for apps that you own)
             'flake8 = 3',                       # Pin to major
-            'twine = 1',
+            'twine = 1.11',                     # Pin to minor
             'workspace-tools = latest',
         ],
     },
