@@ -47,4 +47,5 @@ to install the latest version. Update frequency can also be specified per app. S
 the `autopip` entry point group in `developer-tools' setup.py <https://github.com/maxzheng/developer-tools/blob/master/setup.py#L27>`_
 
 For better security and user experience, it is recommended to pin to a specific version -- at least minor -- for 3rd
-party apps. For apps that you own where you have good versioning in the app, then `latest` works better.
+party apps. For apps that you own where you have good versioning in the app, then `latest` works better to let the app
+control its own release.
