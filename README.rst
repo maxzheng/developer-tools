@@ -14,10 +14,9 @@ To install::
 Which should output something like the following -- line 3 is the interesting part::
 
     Installing developer-tools to /home/mzheng/.apps/developer-tools/0.0.3
-    Auto-update enabled via cron service
-    This app has defined "autopip" entry points to install: ansible==2.5.4.* ansible-hostmanager twine==1.* workspace-tools
+    Hourly auto-update enabled via cron service
+    This app has defined "autopip" entry points to install: ansible==2.5.4 ansible-hostmanager twine==1.* workspace-tools
     Installing ansible to /home/mzheng/.apps/ansible/2.5.4
-    Auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
     + ansible
     + ansible-config
@@ -30,15 +29,15 @@ Which should output something like the following -- line 3 is the interesting pa
     + ansible-pull
     + ansible-vault
     Installing ansible-hostmanager to /home/mzheng/.apps/ansible-hostmanager/0.2.3
-    Auto-update enabled via cron service
+    Hourly auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
     + ah
     Installing twine to /home/mzheng/.apps/twine/1.11.0
-    Auto-update enabled via cron service
+    Weekly auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
     + twine
     Installing workspace-tools to /home/mzheng/.apps/workspace-tools/3.2.4
-    Auto-update enabled via cron service
+    Hourly auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
     + wst
 
