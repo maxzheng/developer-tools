@@ -44,8 +44,8 @@ Which should output something like the following -- line 3 is the interesting pa
 
 How does it work? You can tell `autopip` to install other apps by setting an `autopip` entry point group in
 ``setup.py`` with the list of apps and versions. Versions can be pinned to major or a specific version, or use `latest`
-to install the latest version. Take a look at the `autopip` entry point group in `developer-tools' setup.py
-<https://github.com/maxzheng/developer-tools/blob/master/setup.py#L27>`_
+to install the latest version. Take a look at the `autopip` entry point group in
+`developer-tools' setup.py <https://github.com/maxzheng/developer-tools/blob/master/setup.py#L27>`_
 
 For security and user experience, it is recommended to pin to a specific version -- at least minor -- for apps that you
 don't own. For apps that you own where you have good versioning in the app, then `latest` works better.
