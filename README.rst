@@ -63,7 +63,7 @@ And everything is installed as expected:
     twine                1.11.0   /home/mzheng/.apps/twine/1.11.0               [updates weekly]
     workspace-tools      3.2.4    /home/mzheng/.apps/workspace-tools/3.2.4      [updates hourly]
 
-Pretty cool, huh?
+Pretty cool, huh? :)
 
 
 Links & Contact Info
