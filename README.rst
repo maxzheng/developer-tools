@@ -15,7 +15,7 @@ Which should output something like the following -- line 3 is the interesting pa
 
     Installing developer-tools to /home/mzheng/.apps/developer-tools/0.0.3
     Hourly auto-update enabled via cron service
-    This app has defined "autopip" entry points to install: ansible==2.5.4 ansible-hostmanager twine==1.* workspace-tools
+    This app has defined "autopip" entry points to install: ansible==2.5.4 ... twine==1.* workspace-tools
     Installing ansible to /home/mzheng/.apps/ansible/2.5.4
     Updating script symlinks in /home/mzheng/.apps/bin
     + ansible
@@ -25,6 +25,21 @@ Which should output something like the following -- line 3 is the interesting pa
     Hourly auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
     + wst
+
+And everything is installed as expected:
+
+.. code-block:: console
+
+    $ autopip list
+    ansible              2.5.4    /home/mzheng/.apps/ansible/2.5.4
+    ansible-hostmanager  0.2.3    /home/mzheng/.apps/ansible-hostmanager/0.2.3  [updates hourly]
+    autopip              1.0.2    /home/mzheng/.apps/autopip/1.0.2              [updates hourly]
+    awscli               1.15.31  /home/mzheng/.apps/awscli/1.15.31             [updates monthly]
+    developer-tools      1.0.1    /home/mzheng/.apps/developer-tools/1.0.1      [updates hourly]
+    flake8               3.5.0    /home/mzheng/.apps/flake8/3.5.0               [updates weekly]
+    rstcheck             3.0.1    /home/mzheng/.apps/rstcheck/3.0.1
+    twine                1.11.0   /home/mzheng/.apps/twine/1.11.0               [updates weekly]
+    workspace-tools      3.2.4    /home/mzheng/.apps/workspace-tools/3.2.4      [updates hourly]
 
 How does it work? You can tell `autopip` to install other apps by setting an `autopip` entry point group in
 ``setup.py`` with the list of apps and versions. Versions can be pinned to major or a specific version, or use `latest`
