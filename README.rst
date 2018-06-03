@@ -19,23 +19,8 @@ Which should output something like the following -- line 3 is the interesting pa
     Installing ansible to /home/mzheng/.apps/ansible/2.5.4
     Updating script symlinks in /home/mzheng/.apps/bin
     + ansible
-    + ansible-config
-    + ansible-connection
-    + ansible-console
-    + ansible-doc
-    + ansible-galaxy
-    + ansible-inventory
-    + ansible-playbook
-    + ansible-pull
-    + ansible-vault
-    Installing ansible-hostmanager to /home/mzheng/.apps/ansible-hostmanager/0.2.3
-    Hourly auto-update enabled via cron service
-    Updating script symlinks in /home/mzheng/.apps/bin
-    + ah
-    Installing twine to /home/mzheng/.apps/twine/1.11.0
-    Weekly auto-update enabled via cron service
-    Updating script symlinks in /home/mzheng/.apps/bin
-    + twine
+    ...
+    ...
     Installing workspace-tools to /home/mzheng/.apps/workspace-tools/3.2.4
     Hourly auto-update enabled via cron service
     Updating script symlinks in /home/mzheng/.apps/bin
@@ -44,7 +29,20 @@ Which should output something like the following -- line 3 is the interesting pa
 How does it work? You can tell `autopip` to install other apps by setting an `autopip` entry point group in
 ``setup.py`` with the list of apps and versions. Versions can be pinned to major or a specific version, or use `latest`
 to install the latest version. Update frequency can also be specified per app. Seeing is believing, so take a look at
-the `autopip` entry point group in `developer-tools' setup.py <https://github.com/maxzheng/developer-tools/blob/master/setup.py#L27>`_
+the `autopip` entry point group in `developer-tools' setup.py <https://github.com/maxzheng/developer-tools/blob/master/setup.py#L27>`_::
+
+    entry_points={
+        'autopip': [
+            'ansible = 2.5.4',                 # Pin to specific version without auto-update (recommended for 3rd party)
+            'ansible-hostmanager = latest',    # Install latest and update hourly (for apps that you own)
+            'autopip = latest',                # So autopip updates itself
+            'awscli = 1.15 [monthly]',         # Pin to minor and update monthly
+            'flake8 = 3 [weekly]',             # Pin to major and update weekly
+            'twine = 1 [weekly]',
+            'rstcheck = 3.0.1',
+            'workspace-tools = latest',
+        ],
+    },
 
 For better security and user experience, it is recommended to pin to a specific version -- at least minor -- for 3rd
 party apps. For apps that you own where you have good versioning in the app, then `latest` works better to let the app
