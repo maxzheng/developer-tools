@@ -63,6 +63,22 @@ And everything is installed as expected:
     twine                1.11.0   /home/mzheng/.apps/twine/1.11.0               [updates weekly]
     workspace-tools      3.2.4    /home/mzheng/.apps/workspace-tools/3.2.4      [updates hourly]
 
+Finally, uninstall will remove them all as well -- though I do recommend keeping them:
+
+.. code-block:: console
+
+    $ app uninstall developer-tools
+    Uninstalling developer-tools
+    This app has defined "autopip" entry points to uninstall: ansible ... workspace-tools
+    Uninstalling ansible
+    Uninstalling ansible-hostmanager
+    Uninstalling awscli
+    Uninstalling flake8
+    Uninstalling rstcheck
+    Uninstalling twine
+    Uninstalling workspace-tools
+    Uninstalling autopip
+
 Pretty cool, huh? :)
 
 
