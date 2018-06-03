@@ -31,6 +31,7 @@ setuptools.setup(
             'awscli = 1.15',                    # Pin to minor
             'flake8 = 3',                       # Pin to major
             'twine = 1',
+            'rstcheck = 3.0.1',
             'workspace-tools = latest',
         ],
     },
