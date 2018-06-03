@@ -49,5 +49,5 @@ setuptools.setup(
       'Programming Language :: Python :: 3.6',
     ],
 
-    keywords='<KEYWORDS>',
+    keywords='autopip entry points example installation group',
 )
