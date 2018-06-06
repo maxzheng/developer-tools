@@ -21,7 +21,7 @@ setuptools.setup(
     include_package_data=True,
 
     python_requires='>=3.6',
-    setup_requires=['setuptools-git'],
+    setup_requires=['setuptools-git', 'wheel'],
 
     entry_points={
         'autopip': [
